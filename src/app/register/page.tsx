@@ -4,7 +4,7 @@ import { motion, Variants } from "framer-motion"
 import { Mail, Lock, Eye, EyeOff, User, ArrowRight } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
-import PawPrint from "../components/Paw-meong"
+import PawPrint from "../../components/Paw-meong"
 
 export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false)

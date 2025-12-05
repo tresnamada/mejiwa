@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="flex items-center gap-8">
           {/* Menu */}
           <div className="flex items-center gap-6">
-            <Link href="#beranda">
+            <Link href="/Home">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="text-[#00296B] font-semibold text-lg hover:opacity-75 transition-opacity cursor-pointer"
@@ -70,19 +70,19 @@ export default function Navbar() {
                     onMouseLeave={() => setIsMijiOpen(false)}
                   >
                     <Link
-                      href="#cerita-miji"
+                      href="/CeritaMiji"
                       className="block px-6 py-3 text-[#00296B] font-medium hover:bg-[#FFD500] transition-colors"
                     >
                       Cerita Miji
                     </Link>
                     <Link
-                      href="#suara-miji"
+                      href="/SuaraMiji"
                       className="block px-6 py-3 text-[#00296B] font-medium hover:bg-[#FFD500] transition-colors"
                     >
                       Suara Miji
                     </Link>
                     <Link
-                      href="#deteksimiji"
+                      href="/DeteksiMiji"
                       className="block px-6 py-3 text-[#00296B] font-medium hover:bg-[#FFD500] transition-colors"
                     >
                       Deteksi Miji
@@ -104,7 +104,7 @@ export default function Navbar() {
 
           {/* Autentikasi */}
           <div className="flex items-center gap-4">
-            <Link href="/register">
+            <Link href="/Register">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -114,7 +114,7 @@ export default function Navbar() {
               </motion.div>
             </Link>
 
-            <Link href="/login">
+            <Link href="/Login">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="text-[#00296B] font-semibold text-lg hover:opacity-75 transition-opacity flex items-center gap-1 cursor-pointer"
@@ -149,7 +149,7 @@ export default function Navbar() {
         <div className="flex items-center justify-around px-4 py-3">
 
           {/* beranda */}
-          <Link href="#beranda">
+          <Link href="/Home">
             <motion.div
               whileTap={{ scale: 0.9 }}
               className="flex flex-col items-center gap-1 px-4 py-2"
@@ -181,21 +181,21 @@ export default function Navbar() {
                   className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-white rounded-lg shadow-xl overflow-hidden min-w-[160px]"
                 >
                   <Link
-                    href="#cerita-miji"
+                    href="/CeritaMiji"
                     onClick={() => setIsMijiOpen(false)}
                     className="block px-5 py-3 text-[#00296B] font-medium hover:bg-[#FFD500] transition-colors text-center"
                   >
                     Cerita Miji
                   </Link>
                   <Link
-                    href="#suara-miji"
+                    href="/SuaraMiji"
                     onClick={() => setIsMijiOpen(false)}
                     className="block px-5 py-3 text-[#00296B] font-medium hover:bg-[#FFD500] transition-colors text-center"
                   >
                     Suara Miji
                   </Link>
                   <Link
-                    href="#deteksimiji"
+                    href="/DeteksiMiji"
                     onClick={() => setIsMijiOpen(false)}
                     className="block px-5 py-3 text-[#00296B] font-medium hover:bg-[#FFD500] transition-colors text-center"
                   >
@@ -207,7 +207,7 @@ export default function Navbar() {
           </div>
 
           {/* Sehat Jiwa */}
-          <Link href="#sehat-jiwa">
+          <Link href="/SehatJiwa">
             <motion.div
               whileTap={{ scale: 0.9 }}
               className="flex flex-col items-center gap-1 px-4 py-2"
@@ -218,13 +218,24 @@ export default function Navbar() {
           </Link>
 
           {/* Daftar */}
-          <Link href="/register">
+          <Link href="/Register">
             <motion.div
               whileTap={{ scale: 0.9 }}
               className="flex flex-col items-center gap-1 px-4 py-2"
             >
               <UserPlus size={24} className="text-[#00296B]" strokeWidth={2.5} />
               <span className="text-xs font-semibold text-[#00296B]">Daftar</span>
+            </motion.div>
+          </Link>
+
+          {/* Login */}
+          <Link href="/Login">
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              className="flex flex-col items-center gap-1 px-4 py-2"
+            >
+              <LogIn size={24} className="text-[#00296B]" strokeWidth={2.5} />
+              <span className="text-xs font-semibold text-[#00296B]">Login</span>
             </motion.div>
           </Link>
         </div>

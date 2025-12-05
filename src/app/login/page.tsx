@@ -4,7 +4,7 @@ import { motion, Variants } from "framer-motion"
 import { Mail, Lock, Eye, EyeOff, ArrowRight } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
-import PawPrint from "../components/Paw-meong"
+import PawPrint from "../../components/Paw-meong"
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -171,7 +171,7 @@ export default function LoginPage() {
             <p className="text-gray-600">
               Belum punya akun?{" "}
               <Link
-                href="/register"
+                href="/Register"
                 className="text-[#00296B] font-bold hover:text-[#FFD500] transition-colors"
               >
                 Daftar Sekarang
